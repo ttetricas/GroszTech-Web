@@ -1,0 +1,94 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CORES DA MARCA */
+:root {
+    --azul-tech: #1da1ff;
+    --azul-escuro: #0b2a4a;
+    --cinza-claro: #f2f2f2;
+    --branco: #ffffff;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #0b2a4a, #123b66, #0b2a4a);
+    background-attachment: fixed;
+    align-items: center;
+    text-align: center;
+}
+
+/* NAVBAR */
+nav {
+    background-color: var(--azul-escuro);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--azul-tech);
+}
+
+/* HEADER / LOGO */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--branco);
+}
+
+header img {
+    width: 250px;
+}
+
+/* SEÇÕES */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: var(--branco);
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* BOTÃO DOWNLOAD */
+.download {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: var(--azul-tech);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download:hover {
+    background-color: var(--azul-escuro);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
