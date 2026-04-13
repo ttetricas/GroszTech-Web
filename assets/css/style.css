@@ -1,4 +1,9 @@
-/* RESET */
+:root {
+    --azul-escuro: #0b1c2d;
+    --azul-neon: #00aaff;
+    --branco: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,89 +11,89 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CORES DA MARCA */
-:root {
-    --azul-tech: #1da1ff;
-    --azul-escuro: #0b2a4a;
-    --cinza-claro: #f2f2f2;
-    --branco: #ffffff;
-}
-
-/* BODY */
 body {
-    background: linear-gradient(135deg, #0b2a4a, #123b66, #0b2a4a);
-    background-attachment: fixed;
-    align-items: center;
-    text-align: center;
+    background: linear-gradient(135deg, var(--azul-escuro), #0e2a47);
+    color: var(--branco);
 }
 
 /* NAVBAR */
-nav {
-    background-color: var(--azul-escuro);
-    padding: 15px;
-    text-align: center;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(0,0,0,0.3);
 }
 
-nav a {
+.logo {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
     color: var(--branco);
     text-decoration: none;
-    margin: 0 20px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-nav a:hover {
-    color: var(--azul-tech);
-}
-
-/* HEADER / LOGO */
-header {
-    text-align: center;
-    padding: 30px;
-    background-color: var(--branco);
-}
-
-header img {
-    width: 250px;
+.navbar a:hover {
+    color: var(--azul-neon);
 }
 
 /* SEÇÕES */
-section {
+.section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 40px;
-    max-width: 900px;
-    margin: auto;
 }
 
-h1, h2 {
-    color: var(--branco);
-    margin-bottom: 15px;
+/* LINHA ENTRE SEÇÕES */
+section + section {
+    border-top: 2px solid rgba(0, 170, 255, 0.4);
 }
 
-p {
+.section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--azul-neon);
+}
+
+.section p {
+    max-width: 700px;
     font-size: 18px;
     line-height: 1.6;
 }
 
-/* BOTÃO DOWNLOAD */
-.download {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 20px;
-    background-color: var(--azul-tech);
-    color: var(--branco);
-    text-decoration: none;
-    border-radius: 5px;
+/* BOTÃO */
+.btn-download {
+    margin-top: 25px;
+    padding: 15px 40px;
+    background-color: var(--azul-neon);
+    color: var(--azul-escuro);
     font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-.download:hover {
-    background-color: var(--azul-escuro);
+.btn-download:hover {
+    background-color: #008ecc;
+    transform: scale(1.05);
 }
 
 /* FOOTER */
 footer {
-    margin-top: 40px;
-    padding: 20px;
     text-align: center;
-    background-color: var(--azul-escuro);
-    color: var(--branco);
+    padding: 20px;
+    background-color: rgba(0,0,0,0.4);
 }
